@@ -82,11 +82,8 @@ projects {
 }
 
 .footer-container{
-    display: grid;
-
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-
-    gap: 20px; /* Space between grid items */
+   display: flex;
+  justify-content: space-between;
 }
 
 .material-symbols-outlined {

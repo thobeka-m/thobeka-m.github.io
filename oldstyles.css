@@ -1,0 +1,480 @@
+/* Reset and basic styles */
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.6;
+
+  color: #333;
+
+  background-color: #f8f8f8;
+
+}
+
+
+/* Header */
+
+header {
+
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 20px;
+
+}
+
+
+nav {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+}
+
+
+.header-content {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+.logo {
+
+  width: 200px;
+
+  height: 200px;
+
+  border-radius: 50%;
+
+  background-image: url('images/image0.jpeg');
+
+  background-size: contain;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  transition: background-image 0.3s ease;
+
+  margin-right: 20px;
+
+}
+
+
+.logo:hover {
+
+  background-image: url('images/image1.jpeg');
+
+}
+
+
+.header-text h1 {
+
+  font-size: 24px;
+
+  margin: 0;
+
+}
+
+
+.header-text p {
+
+  font-size: 16px;
+
+  margin: 5px 0;
+
+  color: #ccc;
+
+}
+
+
+.about-text {
+
+  max-width: 500px;
+
+  line-height: 1.5;
+
+}
+
+
+.nav-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 20px;
+
+}
+
+
+.nav-btn {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+
+  border-radius: 20px;
+
+  background-color: #555;
+
+  transition: background-color 0.3s ease;
+
+  margin: 0 10px;
+
+  font-weight: 600;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.nav-btn:hover {
+
+  background-color: #ccc;
+
+  color: #333;
+
+}
+
+
+/* Main Content */
+
+main {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px;
+
+}
+
+
+section {
+
+  margin-bottom: 40px;
+
+}
+
+
+h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* Tech Stack */
+
+#techstack {
+
+  margin-top: 40px;
+
+  text-align: center;
+
+}
+
+
+.tech-icons {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+
+}
+
+
+.tech-icons i {
+
+  font-size: 48px;
+
+  margin: 10px;
+
+  color: #ccc;
+
+  transition: color 0.3s ease;
+
+}
+
+
+.tech-icons i:hover {
+
+  color: #fff;
+
+}
+
+
+/* Tech Stack */
+
+#techstack {
+
+  margin-top: 40px;
+
+  text-align: center;
+
+}
+
+
+.tech-icons {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+
+}
+
+
+.tech-icons i {
+
+  font-size: 48px;
+
+  margin: 10px;
+
+  color: #333;
+
+  transition: color 0.3s ease;
+
+}
+
+
+.tech-icons i:hover {
+
+  color: #555;
+
+}
+
+
+/* Projects */
+
+#projects {
+
+  background-color: #444;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  padding: 40px 20px;
+
+}
+
+
+#projects h2 {
+
+  color: #fff;
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+}
+
+
+.project-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+
+}
+
+
+.project-card {
+
+  background-color: #555;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  position: relative;
+
+}
+
+
+.project-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.project-card img {
+
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+
+}
+
+
+.project-card:hover img {
+
+  transform: scale(1.1);
+
+}
+
+
+.project-card-content {
+
+  padding: 20px;
+
+  color: #fff;
+
+}
+
+
+.project-card-content h3 {
+
+  font-size: 20px;
+
+  margin-bottom: 10px;
+
+}
+
+
+.project-card-content p {
+
+  margin-bottom: 15px;
+
+}
+
+
+.project-card-content a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+
+  position: absolute;
+
+  bottom: 20px;
+
+  right: 20px;
+
+}
+
+
+.project-card-content a:hover {
+
+  color: #ccc;
+
+}
+
+
+/* Footer */
+
+footer {
+
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 40px 20px;
+
+}
+
+
+.footer-container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+.footer-icons {
+
+  display: flex;
+
+  margin-bottom: 20px;
+
+}
+
+
+.footer-icons a {
+
+  color: #fff;
+
+  font-size: 24px;
+
+  margin: 0 10px;
+
+  transition: color 0.3s ease;
+
+}
+
+
+.footer-icons a:hover {
+
+  color: #ccc;
+
+}
+
+
+.footer-bottom p {
+
+  margin: 0;
+
+  font-size: 14px;
+
+}

@@ -1,131 +1,86 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Thobeka Mlambo | Developer Portfolio</title>
-
+    <title>Thobeka Mlambo's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
     <header>
-
-        <h1>Thobeka</h1>
-
-        <p>Full Stack Developer | Python, Java, AWS</p>
-
+        <nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Thobeka Mlambo</h1>
+                    <h2>Cloud Engineer | Software Developer</h2>
+                </div>
+                <div><a href="content/Thobeka Mlambo Resume 2024.pdf" download class="resume-btn">Download Resume</a></div>
+                <div class="nav-buttons">
+                    
+                    <a href="projects.html" class="nav-btn">Projects</a>
+                    <a href="#contact" class="nav-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
+    <main>
+      <section id="about-tech-grid" class="grid-container">
+          <!-- About Section Card -->
+          <div class="card about-card">
+              <h2>About Me</h2>
+              <br>
+              <div class="logo">  </div>
+              <div><br><br></div>
 
-    <section id="about">
+              <p>Hi, I’m Thobeka Mlambo, a committed, curious, and dedicated professional. As a Summa Cum Laude graduate in Computer Science and IT, I specialize in AWS database services and have earned AWS certifications. I’m passionate about building robust cloud-based solutions and constantly pushing the boundaries of software engineering.</p>
+              <div><br><br></div>
+              <p>I'm a Cloud Developer with experience in database services, Python scripting, and infrastructure management.</p>
+          </div>
 
-        <h2>About Me</h2>
+          <!-- Technical Skills and Certifications Card -->
+          <div class="card skills-card">
+              <h2>Technical Skills</h2>
+              <br>
+              <br>
+              <div class="tech-grid">
+                  <span class="tech"><i class="fab fa-python"></i> Python</span>
+                  <span class="tech"><i class="fab fa-aws"></i> AWS</span>
+                  <span class="tech"><i class="fab fa-java"></i> Java</span>
+                  <span class="tech"><i class="fab fa-html5"></i> HTML</span>
+                  <span class="tech"><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span class="tech"><i class="fab fa-js"></i> JavaScript</span>
+              </div>
 
-        <p>I am a passionate software developer working on gaining experience in full-stack development, cloud computing, and databases. My expertise lies in building scalable solutions using AWS, Python, and Java.</p>
+              <br>
 
-    </section>
+              <h2>Certifications</h2>
+              <br>
+              <ul class="cert-list">
+                  <li ><a href="https://www.credly.com/badges/721c38e6-8aa1-491c-8df1-5324b36569c0/public_url"><img  src="images/aws-certified-solutions-architect-associate.png" alt="AWS Solutions Architect Badge"></a> </li>
+                  <li ><a href="https://www.credly.com/badges/def86d6a-bc87-4ce4-848e-1af5f412b1a2/public_url"><img src="images/ibm_intro_to_coding_explorer_badge.png" alt="IBM Cloud Professional Badge"></a> </li>
+              </ul>
+          </div>
+      </section>
 
-
-    <section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-
-            <img src="path/to/image1.jpg" alt="">
-
-            <h3>Find My Subnet</h3>
-
-            <p>Given a subnet CIDR and an IP address , this project determines if the IP address belongs to the given CIDR</p>
-
-            <p><strong>Technologies:</strong>Python, AWS</p>
-
-             <a href="https://github.com/yourusername/project1" target="_blank"><i class="material-icons">open_in_new</i></a>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="path/to/image1.jpg" alt="">
-
-            <h3>Find My Subnet AWS </h3>
-
-            <p>AWS customers often struggle to determine the subnet in which a resource is built to set up network communication, given subnets and an IP address , this project helps determine which subnet the resource resides</p>
-
-            <p><strong>Technologies:</strong>Python, AWS</p>
-
-            <a href="https://github.com/yourusername/project1" target="_blank"><i class="material-icons">open_in_new</i></a>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="path/to/image2.jpg" alt="">
-
-            <h3>Countdown Timer</h3>
-
-            <p>A countdown timer built from javascript , HTML and CSS</p>
-
-            <p><strong>Technologies:</strong> HTML</p>
-
-            <a href="https://github.com/yourusername/project1" target="_blank"><i class="material-icons">open_in_new</i></a>
-
-        </div>
-
-
-           <div class="project-card">
-
-            <img src="path/to/image2.jpg" alt="">
-
-            <h3>Unit converter</h3>
-
-            <p>A simple java project for converting between units.</p>
-
-            <p><strong>Technologies:</strong> Java </p>
-
-             <a href="https://github.com/yourusername/project1" target="_blank"><i class="material-icons">open_in_new</i></a>
-
-        </div>
-
-
-          <div class="project-card">
-
-            <img src="path/to/image2.jpg" alt="">
-
-            <h3>Quote Generator</h3>
-
-            <p>For the days when you need a little motivation more than others, I've got you.</p>
-
-            <p><strong>Technologies:</strong> Java </p>
-
-             <a href="https://github.com/yourusername/project1" target="_blank"><i class="material-icons">open_in_new</i></a>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <footer >
-<div class="footer-container>
-        <div><a href="mailto:thobeka.n.mlambo@gmail.com"><i class="material-icons">mail</i></a></div>
-        <div><a href="mailto:thobeka.n.mlambo@gmail.com"><i class="download">mail</i></a></div>
-        <div>Find me on GitHub: <a href="https://github.com/thobeka-m">github.com/yourusername</i></a></div>
-</div>
-    </footer>
+        <footer id="contact">
+            <div class="footer-container">
+                <div class="footer-icons">
+                    <a href="mailto:thobeka.n.mlambo@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/thobeka-m/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="www.linkedin.com/in/thobeka-mlambo-057699197/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Designed by Thobeka Mlambo</p>
+                </div>
+            </div>
+        </footer>
+    </main>
 
 </body>
 
 </html>
+
+

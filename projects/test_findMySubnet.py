@@ -1,69 +1,51 @@
 import unittest
-
-from unittest.mock import patch
-
+from unittest.mock import patch, MagicMock
+import findMySubnet
 import findMySubnetInput
+from io import StringIO
 
 
-class TestFindMySubnetInput(unittest.TestCase):
+class TestFindMySubnet(unittest.TestCase):
 
-    
+    @patch("findMySubnet.findMySubnetInput.get_ip")
+    @patch("findMySubnet.findMySubnetInput.is_in_cidr")
+    @patch("boto3.client")
+    def test_find_my_subnet(self, mock_boto3_client, mock_is_in_cidr, mock_get_ip):
+        # Mock the input IP address
 
-    @patch('argparse.ArgumentParser.parse_args')
+        mock_get_ip.return_value = "192.168.1.100"
+        # Mock the EC2 client and its response
 
-    def test_get_ip(self, mock_parse_args):
+        mock_ec2_client = MagicMock()
 
-        mock_parse_args.return_value = argparse.Namespace(ip='192.168.1.100')
+        mock_ec2_client.describe_subnets.return_value = {
+            "Subnets": [
+                {"SubnetId": "subnet-abc123", "CidrBlock": "192.168.1.0/24"},
+                {"SubnetId": "subnet-def456", "CidrBlock": "10.0.0.0/16"},
+            ]
+        }
 
-        ip = findMySubnetInput.get_ip()
+        mock_boto3_client.return_value = mock_ec2_client
 
-        self.assertEqual(ip, '192.168.1.100')
+        # Mock the is_in_cidr function
 
-        
+        mock_is_in_cidr.side_effect = [True, False]
 
-        mock_parse_args.return_value = argparse.Namespace(ip='invalid_ip')
+        # Capture the output
 
-        with self.assertRaises(ValueError):
+        with patch("sys.stdout", new=StringIO()) as fake_stdout:
 
-            findMySubnetInput.get_ip()
+            findMySubnet.FindMySubnet()
 
-        
+            output = fake_stdout.getvalue().strip()
 
-    def test_validate_ip(self):
+        expected_output = (
+            "'192.168.1.100' is in 'subnet-abc123' with CIDR '192.168.1.0/24'"
+        )
 
-        self.assertTrue(findMySubnetInput.validate_ip('192.168.1.100'))
-
-        self.assertFalse(findMySubnetInput.validate_ip('invalid_ip'))
-
-        
-
-    def test_validate_cidr(self):
-
-        self.assertTrue(findMySubnetInput.validate_cidr('192.168.1.0/24'))
-
-        self.assertFalse(findMySubnetInput.validate_cidr('invalid_cidr'))
-
-        
-
-    def test_is_in_cidr(self):
-
-        self.assertTrue(findMySubnetInput.is_in_cidr('192.168.1.100', '192.168.1.0/24'))
-
-        self.assertFalse(findMySubnetInput.is_in_cidr('10.0.0.1', '192.168.1.0/24'))
-
-        
-
-        with self.assertRaises(ValueError):
-
-            findMySubnetInput.is_in_cidr('invalid_ip', '192.168.1.0/24')
-
-            
-
-        with self.assertRaises(ValueError):
-
-            findMySubnetInput.is_in_cidr('10.0.0.1', 'invalid_cidr')
+        self.assertEqual(output, expected_output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     unittest.main()

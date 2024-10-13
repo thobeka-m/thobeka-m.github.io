@@ -79,5 +79,6 @@ The AWS Subnet Finder project provides a convenient way for customers to identif
 
 ### link to scripts
 
-https://github.com/thobeka-m/Python/blob/main/Scripts/findMySubnetInput.py
-https://github.com/thobeka-m/Python/blob/main/Scripts/findMySubnet.py
+https://github.com/thobeka-m/thobeka-m.github.io/blob/1047de103e2bf582604aad984b9ebbf77121dd70/projects/findMySubnetInput.py
+
+https://github.com/thobeka-m/thobeka-m.github.io/blob/1047de103e2bf582604aad984b9ebbf77121dd70/projects/findMySubnet.py

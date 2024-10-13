@@ -46,6 +46,10 @@ python findMySubnet.py 172.31.33.2
 5. If a matching subnet is found, the script will print the subnet ID, CIDR block, and the provided IP address.
 6. If no matching subnet is found, the script will print a message indicating that the IP address was not found in any of the subnets.
 
+### Example with finding the ip address of an ec2 instance and an RDS instance 
+
+![AWS Subnet Finder Screenshot](https://github.com/thobeka-m/thobeka-m.github.io/blob/main/images/findMySubnetUsage.PNG)
+
 ### Script Breakdown
 
 #### `findMySubnet.py`

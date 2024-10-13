@@ -77,4 +77,7 @@ python findMySubnet.py 172.31.33.2
 The AWS Subnet Finder project provides a convenient way for customers to identify the subnet of their AWS resources based on the resource's private IP address. By leveraging the AWS SDK for Python (Boto3) and Python's built-in modules for IP address and CIDR notation validation, the project offers a simple yet effective solution for customers who may not have extensive networking knowledge.
 
 
+### link to scripts
 
+https://github.com/thobeka-m/Python/blob/main/Scripts/findMySubnetInput.py
+https://github.com/thobeka-m/Python/blob/main/Scripts/findMySubnet.py

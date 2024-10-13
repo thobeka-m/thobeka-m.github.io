@@ -66,3 +66,7 @@ The network '192.0.2.0/28' DOES NOT contain the IP address '192.0.2.100'
 ```
 
 In the first example, the IP address `192.0.2.6` falls within the CIDR range `192.0.2.0/28`, so the script prints a message indicating that the IP address is contained in the network. In the second example, the IP address `192.0.2.100` does not fall within the CIDR range `192.0.2.0/28`, so the script prints a message indicating that the IP address is not contained in the network.
+
+
+### Link to script
+https://github.com/thobeka-m/thobeka-m.github.io/blob/0d37084b50128e36f3ec1a293baaa9a83ad76616/projects/isInCIDR.py

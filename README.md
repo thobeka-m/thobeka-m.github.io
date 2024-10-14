@@ -10,22 +10,21 @@ Hi there! Welcome to my portfolio. I'm Thobeka Mlambo, a passionate and dedicate
 ### About Me
 
 
-I'm a Summa Cum Laude graduate in Computer Science and IT, specializing in AWS database services and holding AWS certifications. I'm driven by a deep curiosity to explore the ever-evolving world of cloud computing and software engineering, constantly pushing the boundaries of what's possible.
+I'm a Summa Cum Laude graduate in Computer Science and IT, specializing in AWS database services and holding AWS certifications. I'm driven by a deep curiosity to explore the ever-evolving world of cloud computing and software engineering, aiming to  constantly push the boundaries of what's possible.
 
 
-As a Cloud Developer, I have hands-on experience in database services, Python scripting, and infrastructure management. I thrive on building robust, scalable, and secure cloud-based solutions that meet the unique needs of clients across diverse industries.
+As a Cloud support engineer, I have hands-on experience in database services, Python scripting, and infrastructure management. I thrive on building robust, scalable, and secure cloud-based solutions that meet the unique needs of clients across diverse industries.
 
 
 ### Technical Skills
 
 
-- **Programming Languages**: Python, Java, HTML, CSS, JavaScript
+- **Programming Languages**: Python, Java, HTML, CSS, C# , C++
 
 - **Cloud Technologies**: AWS (Amazon Web Services)
 
-- **Databases**: PostgreSQL, MySQL, MongoDB
+- **Databases**: PostgreSQL, Oracle, MongoDB
 
-- **Tools and Frameworks**: Git, Docker, Kubernetes, Ansible
 
 
 ### Certifications
@@ -35,18 +34,6 @@ As a Cloud Developer, I have hands-on experience in database services, Python sc
 
 - [IBM Introduction to Cloud Development Explorer Badge](https://www.credly.com/badges/def86d6a-bc87-4ce4-848e-1af5f412b1a2/public_url)
 
-
-### Projects
-
-
-Check out some of my recent projects:
-
-
-- [Project 1 Name](link-to-project): Brief description of Project 1.
-
-- [Project 2 Name](link-to-project): Brief description of Project 2.
-
-- [Project 3 Name](link-to-project): Brief description of Project 3.
 
 
 ### Get in Touch

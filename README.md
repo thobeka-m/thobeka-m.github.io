@@ -1,7 +1,7 @@
 # Thobeka Mlambo
 
 
-## Cloud Engineer | Software Developer
+## Cloud Support Engineer | Software Developer
 
 
 Hi there! Welcome to my portfolio. I'm Thobeka Mlambo, a passionate and dedicated Cloud Engineer and Software Developer. Let me tell you a bit about myself.

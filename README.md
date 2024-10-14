@@ -10,10 +10,10 @@ Hi there! Welcome to my portfolio. I'm Thobeka Mlambo, a passionate and dedicate
 ### About Me
 
 
-I'm a Summa Cum Laude graduate in Computer Science and IT, specializing in AWS database services and holding AWS certifications. I'm driven by a deep curiosity to explore the ever-evolving world of cloud computing and software engineering, aiming to  constantly push the boundaries of what's possible.
+I am a committed, curious, and dedicated professional and a Summa Cum Laude graduate in Computer Science and IT. As a Cloud Support engineer I specialize in AWS database services and I have earned an AWS certification. I’m passionate about learning how to build robust cloud-based solutions and aim to constantly push my boundaries.
 
+I aim to build a great career for myself , going where the growth is.
 
-As a Cloud support engineer, I have hands-on experience in database services, Python scripting, and infrastructure management. I thrive on building robust, scalable, and secure cloud-based solutions that meet the unique needs of clients across diverse industries.
 
 
 ### Technical Skills

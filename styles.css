@@ -321,6 +321,18 @@ line-height: 1.%;
 
 }
 
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #282A35;
+  color: white;
+  position: relative;
+}
+
+
 
 .project-link {
 

@@ -14,7 +14,7 @@ I am a committed, curious, and dedicated professional and a Summa Cum Laude grad
 
 I aim to build a great career for myself , going where the growth is.
 
-##Artifacts
+### Artifacts
 - **Personal Dev Site v1** - https://thobeka-m.github.io/
 - **Personal Dev Site v1** - WIP 🚧
 
